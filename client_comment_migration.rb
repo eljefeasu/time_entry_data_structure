@@ -5,7 +5,7 @@ class ClientCommentMigration < ActiveRecord::Migration
     create_table :client_comments do |t|
       t.integer :developer_id
       t.integer :client_id
-      t.string :comment
+      t.text :comment
     end
   end
 end
